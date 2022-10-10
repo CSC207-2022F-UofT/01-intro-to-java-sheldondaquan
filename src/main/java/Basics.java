@@ -187,6 +187,7 @@ public class Basics {
         int i = 0;
 
         while(i < arr.length){
+
             if(i % 2 == 1){
                 current_sum += arr[i];
             }
