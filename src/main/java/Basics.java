@@ -144,16 +144,21 @@ public class Basics {
          *                separated by spaces, so no loops are required, though
          *                you may use them if you wish.
          */
+
+
         StringBuilder ret = new StringBuilder();
 
-        String[] Newlist = to_split.split( "");
+        String[] Newlist = to_split.split( " ");
+
 
         for (String p : Newlist){
-            ret.append(p);
+            ret.append(p.charAt(0));
+
         }
 
         return ret.toString();
     }
+
 
     /**
      * 7. Below is a method that takes in an integer array (similar to a list
@@ -179,10 +184,18 @@ public class Basics {
          *                (e.g. arr[i] gives you the item at index i).
          */
 
+        int i = 0;
 
+        while(i < arr.length){
+            if(i % 2 == 1){
+                current_sum += arr[i];
+            }
+            i++;
+        }
 
         return current_sum;
     }
+
 
 
     /*
